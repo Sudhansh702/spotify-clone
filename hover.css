@@ -1,0 +1,27 @@
+.song-card:hover .play-button {
+    opacity: 1;
+    transform: translateY(-25px);
+}
+.lib-card:hover{
+    background-color: rgb(48, 48, 48);
+    cursor: pointer;
+}
+.song-card:hover {
+    background-color: #313131;
+
+}
+.hover1 :hover{
+    cursor: pointer;
+    color: rgb(185, 185, 185);
+}
+nav :first-child >button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+nav :nth-child(2) >button:hover{
+    cursor: pointer;
+    transform: scale(105%);
+}
+.centerOptionAll > button:hover{
+    transform: scale(1.04);
+}

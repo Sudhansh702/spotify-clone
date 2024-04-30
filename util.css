@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: rgb(158, 158, 158);
+}
+
+body {
+  background-color: black;
+}
+
+.border-radius {
+  border-radius: 10px;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.cc {
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.icons {
+  height: 30px;
+  width: 30px;
+}
+
+.scrollBar {
+  overflow-y: scroll;
+  /* Enable vertical scrolling */
+  padding: 10px;
+  /* Add some padding for content */
+}
+
+/* Custom scrollbar styles (for both light and dark themes) */
+.scrollBar::-webkit-scrollbar {
+  width: 10px;
+  /* Scrollbar width */
+}
+
+.scrollBar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* Light theme track color (adjust for your theme) */
+  border-radius: 5px;
+  /* Rounded corners for track */
+}
+
+.scrollBar::-webkit-scrollbar-thumb {
+  background: #888;
+  /* Light theme thumb color (adjust for your theme) */
+  border-radius: 5px;
+  /* Rounded corners for thumb */
+}
+
+/* Dark theme styles (optional) */
+@media (prefers-color-scheme: dark) {
+  .scrollBar::-webkit-scrollbar-track {
+    background: #333;
+    /* Dark theme track color */
+  }
+
+  .scrollBar::-webkit-scrollbar-thumb {
+    background: #666;
+    /* Dark theme thumb color */
+  }
+}
+.scrollBar-x {
+  overflow-x: scroll;
+  /* Enable vertical scrolling */
+  padding: 10px;
+  /* Add some padding for content */
+}
+
+/* Custom scrollbar styles (for both light and dark themes) */
+.scrollBar-x::-webkit-scrollbar {
+  width: 1px; 
+  /* Scrollbar width */
+}
+.scrollBar-x::-webkit-scrollbar-track-piece{
+  width: 2px;
+}
+
+
+/* Dark theme styles (optional) */
+@media (prefers-color-scheme: dark) {
+  .scrollBar-x::-webkit-scrollbar-track {
+    background: #33333325;
+    border-radius: 5px;
+    /* Dark theme track color */
+  }
+  
+  .scrollBar-x::-webkit-scrollbar-thumb {
+    background: #66666677;
+    border-radius: 5px;
+  }
+}

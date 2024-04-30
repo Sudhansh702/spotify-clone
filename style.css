@@ -1,0 +1,278 @@
+.main {
+    height: 85vh;
+    width: 100vw;
+}
+
+.left {
+    height: 100%;
+    width: 20%;
+    gap: 10px;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.home {
+    width: 100%;
+    height: 20%;
+    background-color: #121212;
+    align-items: start;
+    padding: 10px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+div>span {
+    padding: 0 10px;
+    font-size: large;
+}
+
+.library {
+    width: 100%;
+    height: 80%;
+    background-color: #121212;
+}
+
+.lib1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.lib1 :nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+
+.lib2 {
+    padding: 0 10px;
+}
+
+.lib2>button {
+    background-color: rgb(39, 39, 39);
+    color: #cecece;
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+}
+
+.lib3 {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    padding: 10px 20px;
+}
+
+.lib-card img {
+    height: 50px;
+    padding: 0 10px;
+    border-radius: 5px;
+
+}
+
+.lib-card {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 5px;
+    height: 65px;
+    width: 90%;
+    margin: auto;
+    transition: all 0.3s;
+}
+
+.lib-card>div :first-child {
+    font-weight: 400;
+    color: rgb(220, 220, 220);
+}
+
+.center {
+    height: 100%;
+    width: 60%;
+    margin: 10px 0;
+    background-color: #121212;
+}
+
+nav {
+    width: 100%;
+    /* height: 170px; */
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+nav :first-child>button {
+    background-color: #49494900;
+    border: none;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+nav :nth-child(2)>button {
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #121212;
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.centerOptionAll>button {
+    background-color: rgb(70, 69, 69);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: 400;
+    color: white;
+    transition: all 0.3s;
+}
+
+.centerPlaylist {
+    display: flex;
+}
+
+.song-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 175px;
+    height: 250px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: all 0.3s;
+}
+
+.song-card img {
+    align-self: center;
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+
+.song-title {
+    font-weight: bold;
+    color: #dbdbdb;
+    margin-bottom: 5px;
+}
+
+.artist-and-description {
+    color: #888;
+    font-size: 0.8em;
+    line-height: 1.2;
+}
+
+.play-button {
+    position: absolute;
+    bottom: 65px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.play-button>img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+
+
+.right {
+    height: 100%;
+    width: 20%;
+    margin: 10px;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.right>img {
+    width: 95%;
+    padding: 10px;
+    align-self: center;
+}
+
+.player {
+    height: 10vh;
+    width: 100vw;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.curr-song {
+    gap: 10px;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.curr-song>img {
+    height: 100%;
+    padding: 0 20px;
+}
+
+.curr-song>div :first-child {
+    font-weight: 400;
+    color: rgb(220, 220, 220);
+}
+
+.curr-song>img {
+    height: 50%;
+}
+
+.previos {
+    transform: rotateY(180deg);
+    filter: invert();
+}
+
+.next {
+    filter: invert();
+}
+
+.player-container {
+    background-color: #ffffff00;
+    border-radius: 5px;
+    height: 90%;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    height: 50%;
+}
+
+.controls button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 23px;
+    color: #ddd;
+}
+
+.progress-bar {
+    width: 300px;
+    height: 5px;
+    background-color: #444;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.fill {
+    background-color: #35ff42;
+    width: 0%;
+    height: 100%;
+    transition: width 0.2s ease-in-out;
+}
